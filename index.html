@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penny Wrenn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: #F5EDD8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Retro radiating circle background — subtle */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -50%;
+      background:
+        repeating-radial-gradient(
+          circle at 50% 50%,
+          transparent 0px,
+          transparent 38px,
+          rgba(255, 20, 147, 0.06) 39px,
+          transparent 40px
+        );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 13vw, 8rem);
+      letter-spacing: 0.03em;
+      line-height: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Letter colors pulled from the image palette */
+    .c1  { color: #FF1493; } /* H  — hot magenta */
+    .c2  { color: #00CED1; } /* i  — dark turquoise */
+    .c3  { color: #FF6B35; } /* ,  — orange */
+    .c4  { color: #FFD700; } /* I  — gold */
+    .c5  { color: #9B59B6; } /* '  — purple */
+    .c6  { color: #FF1493; } /* m  — hot magenta */
+    .c7  { color: #00BCD4; } /* P  — teal */
+    .c8  { color: #FF6B35; } /* e  — orange */
+    .c9  { color: #FF1493; } /* n  — hot magenta */
+    .c10 { color: #7C4DFF; } /* n  — deep purple */
+    .c11 { color: #FFD700; } /* y  — gold */
+    .c12 { color: #FF1493; } /* W  — hot magenta */
+    .c13 { color: #00CED1; } /* r  — teal */
+    .c14 { color: #FF6B35; } /* e  — orange */
+    .c15 { color: #9B59B6; } /* n  — purple */
+    .c16 { color: #FFD700; } /* n  — gold */
+
+    .sub {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      color: #5c2e3a;
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+      font-weight: 500;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      border-radius: 999px;
+      background: #FF1493;
+      color: #F5EDD8;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      box-shadow: 4px 4px 0px #9B59B6;
+    }
+
+    .btn:hover {
+      background: #cc0f7a;
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px #9B59B6;
+    }
+
+    .btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #9B59B6;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>
+      <span class="c1">H</span><span class="c2">i</span><span class="c3">,</span>
+      <span class="c4">I</span><span class="c5">'</span><span class="c6">m</span>
+      <br>
+      <span class="c7">P</span><span class="c8">e</span><span class="c9">n</span><span class="c10">n</span><span class="c11">y</span>
+      <span class="c12">W</span><span class="c13">r</span><span class="c14">e</span><span class="c15">n</span><span class="c16">n</span>
+    </h1>
+    <p class="sub">A creative professional with a passion for building things that matter. I love turning ideas into reality.</p>
+    <a href="mailto:pennywrenn@gmail.com" class="btn">Get in Touch</a>
+  </div>
+</body>
+</html>
